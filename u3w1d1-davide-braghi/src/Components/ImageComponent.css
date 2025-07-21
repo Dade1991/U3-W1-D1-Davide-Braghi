@@ -1,0 +1,8 @@
+.image-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-section img {
+  margin: 10px;
+}

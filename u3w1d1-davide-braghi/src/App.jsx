@@ -1,7 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react"
+import reactLogo from "./assets/react.svg"
+import viteLogo from "/vite.svg"
+import "./App.css"
+import "./Components/ImageComponent.css"
+import "./Components/MyButton.css"
+import MyButton from "./Components/MyButton"
+import ImageComponent from "./Components/ImageComponent"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,6 +32,21 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <div className="button-section">
+        <MyButton ButtonText="Click Here" />
+        <MyButton ButtonText="Schissa QUA" />
+        <MyButton ButtonText="Brau" />
+      </div>
+      <div className="images-section">
+        <ImageComponent
+          ImageToLoad="https://www.placecats.com/300/300"
+          DescriptionToLoad="Image of cats"
+        />
+        <ImageComponent
+          ImageToLoad="https://www.placebear.com/300/300"
+          DescriptionToLoad="Image of bear"
+        />
+      </div>
     </>
   )
 }
